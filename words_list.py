@@ -10,4 +10,9 @@ with open(word_list_url) as file_object:
         quit()
 
 chosen_word = random.choice(words_list).lower()
-print(chosen_word)
+
+blank_word = []
+for letter in chosen_word:
+    blank_word.append("_")
+    
+print(blank_word)
