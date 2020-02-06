@@ -4,7 +4,7 @@ from PyDictionary import PyDictionary
 #import functions
 import graphics
 import words_list
-#import start_game
+import start_game
 #import play_again
 #import choose_level
 
@@ -26,17 +26,22 @@ import words_list
 
 #attempts = len(graphics.HANGMAN_PICS)
 #print(attempts)
-
+start_game.game_start()
+time.sleep(0.5)
+start_game.hi_player()
+time.sleep
 
 play_again = True
 while play_again:
-    words_list.chosen_word
     guess = []
     guessed_letters = []
+    words_list.chosen_word
     blank_word = []
     for letter in words_list.chosen_word:
         blank_word.append("_")
-    attempts = 6
+    len(graphics.HANGMAN_PICS)   
+
+    attempts = len(graphics.HANGMAN_PICS) 
     
     while attempts > 0:
 
@@ -83,7 +88,7 @@ while play_again:
             print("".join(blank_word))
 
             if attempts == 0:
-                print("Sorry, the game is over. The word was " + words_list.chosen_word)
+                print("Sorry, the game is over. The word was " + words_list.chosen_word.upper())
                 try:
                     myDict = PyDictionary(words_list.chosen_word)
                     print(myDict.getMeanings())
@@ -97,7 +102,7 @@ while play_again:
                 break
 
             if "_" not in blank_word:
-                print("Congratulation! " + words_list.chosen_word.title() + " was the word.")
+                print("Congratulation! " + words_list.chosen_word.upper() + " was the word.")
                 try: 
                     myDict = PyDictionary(words_list.chosen_word)
                     print(myDict.getMeanings())

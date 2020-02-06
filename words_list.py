@@ -8,11 +8,5 @@ with open(word_list_url) as file_object:
     except:
         print('File cannot be opened:', word_list_url)
         quit()
-
-chosen_word = random.choice(words_list).lower()
-
-blank_word = []
-for letter in chosen_word:
-    blank_word.append("_")
     
-print(blank_word)
+chosen_word = random.choice(words_list).lower()
