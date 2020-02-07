@@ -1,4 +1,5 @@
-# hangman_game_pythons
+# Hangman game Python
+
 ## Intro
 - Hangman game rules(https://en.wikipedia.org/wiki/Hangman_(game))
 - A simple hangman game made with python. This was made as a beginner python project in Tribe of AI Class F (2020).
