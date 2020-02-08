@@ -1,1 +1,2 @@
-print("Thank you for playing HANGMAN GAME")
+def bey():
+    print("Thank you for playing HANGMAN GAME")

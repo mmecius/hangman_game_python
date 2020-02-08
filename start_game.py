@@ -1,4 +1,5 @@
-game_start_msg = input
+import words_list
+import time
 
 def game_start():
     print("Would you like to play Hangman? Choose 'yes' or 'no'")
@@ -6,4 +7,10 @@ def game_start():
 
 def hi_player():
     name = input("\nPlease enter your name: ").strip()
-    return "Hi " + name.title()
+    print("Hi " + name.title() + " time to play hangman!")
+
+def number_of_words():
+    print("Number of words in text file: ",len(words_list.words_list))
+    time.sleep(1)
+    print("Have fun!")
+
