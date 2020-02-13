@@ -20,9 +20,15 @@ while play_again:
     for letter in words_list.chosen_word:
         blank_word.append("_")
     len(graphics.HANGMAN_PICS)   
-
-    attempts = len(graphics.HANGMAN_PICS) 
     
+    gameMode = input('Choose a level - Easy (9 Guesses), Medium (7 Guesses) or Hard (6 Guesses)').lower()
+    if gameMode == 'easy':
+        attempts = 9
+    elif gameMode == 'medium':
+        attempts = 7
+    else:
+        attempts = 6
+
     while attempts > 0:
 
         if (attempts !=0 and "_" in blank_word):
@@ -70,8 +76,8 @@ while play_again:
             if attempts == 0:
                 print("Sorry, the game is over. The word was " + words_list.chosen_word.upper())
                 try:
-                    myDict = PyDictionary(words_list.chosen_word)
-                    print(myDict.getMeanings())
+                    my_dict = PyDictionary(words_list.chosen_word)
+                    print(my_dict.getMeanings())
                 except:
                     print("Not found")
                 print("\nWould you like to play again?")
@@ -83,8 +89,8 @@ while play_again:
             if "_" not in blank_word:
                 print("Congratulation! " + words_list.chosen_word.upper() + " was the word.")
                 try: 
-                    myDict = PyDictionary(words_list.chosen_word)
-                    print(myDict.getMeanings())
+                    my_dict = PyDictionary(words_list.chosen_word)
+                    print(my_dict.getMeanings())
                 except:
                     print("Not found")
                 print("Would you like to play again?")
