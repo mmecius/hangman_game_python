@@ -5,12 +5,6 @@ import words_list
 import start_game
 import end_game
 
-start_game.game_start()
-time.sleep(0.5)
-start_game.hi_player()
-time.sleep
-start_game.number_of_words()
-
 play_again = True
 while play_again:
     guess = []
@@ -21,7 +15,7 @@ while play_again:
         blank_word.append("_")
     len(graphics.HANGMAN_PICS)   
     
-    gameMode = input('Choose a level - Easy (9 Guesses), Medium (7 Guesses) or Hard (6 Guesses)').lower()
+    gameMode = input('Choose a level - Easy (9 Guesses), Medium (7 Guesses) or Hard (6 Guesses) :').lower()
     if gameMode == 'easy':
         attempts = 9
     elif gameMode == 'medium':
@@ -98,7 +92,7 @@ while play_again:
                 if response not in ("yes", "y"):
                     play_again = False
                 break
-end_game.bey()
+end_game.bye()
              
 
 
