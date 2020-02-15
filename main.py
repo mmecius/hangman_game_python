@@ -1,8 +1,8 @@
 import random, time
 from PyDictionary import PyDictionary
 import graphics
+import start
 import words_list
-import start_game
 import end_game
 
 play_again = True
@@ -14,7 +14,7 @@ while play_again:
     for letter in words_list.chosen_word:
         blank_word.append("_")
     len(graphics.HANGMAN_PICS)   
-    
+   
     gameMode = input('Choose a level - Easy (9 Guesses), Medium (7 Guesses) or Hard (6 Guesses) :').lower()
     if gameMode == 'easy':
         attempts = 9
