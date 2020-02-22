@@ -8,7 +8,6 @@ def game_rul():
     browser = webdriver.Chrome()
     browser.get(GAME_RULES)
 
-game_rul()
 
 
 

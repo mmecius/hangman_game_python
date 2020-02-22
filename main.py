@@ -3,7 +3,6 @@ from PyDictionary import PyDictionary
 import graphics
 import start
 import words_list
-import end_game
 
 play_again = True
 while play_again:
@@ -92,7 +91,7 @@ while play_again:
                 if response not in ("yes", "y"):
                     play_again = False
                 break
-end_game.bye()
+print("Thank you for playing HANGMAN GAME")
              
 
 

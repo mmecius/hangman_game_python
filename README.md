@@ -10,7 +10,7 @@
 ## Run in Terminal
 - run in terminal python3 main.py
 ## Features
-- Words for game are uploaded from random.txt file. File contains of 4 categories: fruits, vegetables, shapes and cities.
+- Words for game are uploaded from words_list.txt file. 
 - Non correct gues are shown as ASCII Art each time in terminal.
 - Level can be choosed: easy, medium and hard. Level changes number of turns you have.
 - While playing you can't enter: number, two characters, the same character too much times. Game informs you about the same information entered. 
